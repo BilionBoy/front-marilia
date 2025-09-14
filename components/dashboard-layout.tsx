@@ -26,7 +26,7 @@ const navigation = [
     icon: Home,
   },
   {
-    name: "Cateogorias",
+    name: "Categorias",
     href: "/dashboard/categorias",
     icon: Package,
   },

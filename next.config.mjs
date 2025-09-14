@@ -9,6 +9,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "http://192.168.1.19:3000/:path*", // Proxy para a API Rails
+      },
+    ];
+  },
+};
 
-export default nextConfig
+export default nextConfig;
